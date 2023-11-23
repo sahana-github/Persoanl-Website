@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;800;900&family=Stick+No+Bills:wght@800&display=swap');
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: rgb(27, 0, 4);
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+}
+
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: whitesmoke url('/static/media/spinner.gif') no-repeat center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s;
+    /* Add a transition for the opacity property */
+}
+
+.loaded #loading {
+    opacity: 0;
+    display: none;
+    /* Hide the element after fading out */
+}
+
+li,
+a {
+
+    color: rgb(218, 20, 53);
+    font-size: 30px;
+}
+
+nav ul li a:hover {
+    color: white;
+    border-bottom: 1px solid rgb(218, 20, 53);;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    text-decoration: none;
+}
+
+.social-links i {
+    padding: 5px 5px;
+    /* padding-left: 20px; */
+}
+
+
+.head-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-text h3 {
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+}
+
+#head-text {
+
+    font-family: 'Stick No Bills', sans-serif;
+    color:rgb(218, 20, 53);
+    font-size: 150px;
+
+}
+
+.bio-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.bio-txt p {
+    text-align: center;
+    color: whitesmoke;
+    padding: 10px 70px 70px 70px;
+}
+
+.what-i-do {
+    background: #0e0b08;
+
+}
+
+.what-i-do h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(218, 20, 53);
+
+}
+
+.contact-txt {
+    color: rgb(218, 20, 53);
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.cards {
+    background: white;
+    height: 100%;
+    /* box-shadow: #0e0b08; */
+    padding: 60px;
+
+}
+
+.cards img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-title,
+p {
+    text-align: center;
+}
+
+.project-text {
+    text-align: center;
+
+}
+
+.project-text {
+    color: whitesmoke;
+
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+
+.text-what {
+    height: 100px;
+}
+
+.text-what h2 span {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.card {
+    color: rgb(0, 0, 0);
+    background-color: rgb(52, 34, 5);
+    font-weight: 600;
+
+}
+
+.what-head {
+    height: 100px;
+}
+
+
+.what-head h2 {
+    padding: 4%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 2s ease;
+}
+
+.card-title {
+    color: white;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.about i {
+    margin-right: 0.5%;
+}
+
+.skills {
+    font-size: small;
+}
+
+.about-txt {
+    color: whitesmoke;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon li {
+    display: inline-block;
+    padding: 0px 20px;
+    /* margin-top: 5%; */
+}
+
+.icon li i {
+    justify-content: center;
+    display: flex;
+}
+
+.icon li p {
+    margin-top: 10%;
+    color: whitesmoke;
+}
+
+.txt {
+    color:rgb(218, 20, 53);
+}
+
+
+
+
+footer a {
+    text-decoration: none;
+
+
+}
+
+.footer-txt {
+    color: whitesmoke;
+}
+
+footer p a {
+    color: white;
+}
+
+footer p a:hover {
+    color: rgb(218, 20, 53);
+}
+
+/* Add this CSS to your existing stylesheet */
+
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    header img {
+        margin-right: 5%;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        /* text-align: center; */
+        padding-left: 15%;
+    }
+
+    .nav_links li {
+        margin: 10px 0;
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+    }
+}
